@@ -1,0 +1,648 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Microsoft YaHei";
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    height: 60px;
+}
+
+.header #logo {
+    position: absolute;
+    top: 15px;
+    left: 50px;
+}
+
+.header #user {
+    position: absolute;
+    right: 125px;
+    top: 15px;
+}
+
+.header h3 {
+    display: inline-block;
+    width: 80px;
+    margin-left: 70px;
+    text-align: right;
+}
+
+.header .nav {
+    display: inline-block;
+    margin-left: 475px;
+    height: 100%;
+}
+
+.header .nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+    width: 80px;
+    height: 60px;
+    text-align: center;
+}
+
+.header .nav ul li:nth-last-child(2) {
+    color: rgb(231, 80, 77);
+}
+
+.nav li a {
+    text-decoration: none;
+    color: rgb(120, 123, 130);
+    position: relative;
+    bottom: 10px;
+}
+
+.nav li:hover:after,
+.header .nav li .first:after {
+     background-color: rgb(231, 80, 77);
+}
+
+.header .nav ul .first {
+    color: rgb(231, 80, 77);
+}
+
+.nav li:hover:after {
+    width: 80px;
+    background-color: rgb(231, 80, 77);
+}
+
+.nav li:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    transition: width .5s ease, background-color .5s ease;
+    -webkit-transition: width .5s ease, background-color .5s ease;
+    -moz-transition: width .5s ease, background-color .5s ease;
+    -ms-transition: width .5s ease, background-color .5s ease;
+}
+
+.main-head img {
+    width: 100%;
+}
+
+.title {
+    position: relative;
+    top: -400px;
+    left: 120px;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    font-size: 46px;
+}
+
+.btn {
+    margin-top: 50px;
+    height: 40px;
+    width: 260px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(231, 80, 77);
+    border: none;
+    font-size: 20px;
+}
+
+.type ul {
+    list-style: none;
+    margin-top: -150px;
+    text-align: center;
+}
+
+.type ul li {
+    float: left;
+    height: 100px;
+    width: 250px;
+    padding: 20px;
+}
+
+.type ul li p {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-right: 2px solid rgb(195, 195, 195);
+}
+
+.type::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+#land-banner {
+    margin-top: 50px;
+    height: 300px;
+    width: 100%;
+    background: rgb(236, 236, 236);
+    text-align: center;
+}
+
+#land-banner img {
+    margin-top: 80px;
+}
+
+#land-banner h1 {
+    margin-top: 20px;
+    color: rgb(161, 161, 161);
+}
+
+#cityInfo {
+    margin-top: -20px;
+    height: 430px;
+    background-image: url(img/3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 430px;
+}
+
+#cityInfo h2 {
+    padding-top: 60px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#cityInfo p {
+    padding-top: 40px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.choose {
+    height: 35px;
+    width: 220px;
+    display: inline-block;
+    float: left;
+    margin-left: 40px;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+#chooseCity div:first-child {
+    margin-left: 120px;
+}
+
+.choose input {
+    height: 33px;
+    width: 170px;
+    margin-left: 10px;
+    border: none;
+}
+
+.choose img {
+    margin-right: 10px;
+    padding: 3px;
+    background-color: rgb(231, 80, 77);
+}
+
+#search {
+    height: 35px;
+    width: 220px;
+    margin-top: 50px;
+    margin-left: 40px;
+    color: rgb(255, 255, 255);
+    background: rgb(231, 80, 77);
+    border: none;
+}
+
+#province {
+    border-top: 1px solid rgb(231, 80, 77);
+    border-right: 1px solid rgb(231, 80, 77);
+    border-left: 1px solid rgb(231, 80, 77);
+}
+
+#province ul {
+    list-style: none;
+    border: 1px solid rgb(231, 80, 77);
+    margin-top: 0px;
+}
+
+#province ul li {
+    height: 30px;
+    width: 220px;
+    margin-left: -40px;
+    line-height: 30px;
+    background-color: rgb(227, 227, 227);
+    overflow: hidden;
+    font-size: 12px;
+    border-right: 1px solid rgb(231, 80, 77);
+}
+
+#province li:nth-child(1) {
+    background-color: rgb(231, 80, 77);
+}
+
+#province li:nth-child(1) img {
+    background-color: rgb(231, 80, 77);
+}
+
+#province img {
+    background-color: rgb(255, 255, 255);
+}
+
+#cityInfo::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+#Collections {
+    padding: 80px 0;
+    background-color: rgb(247, 247, 247);
+    background-size: 1333px;
+}
+
+#Collections ul, li {
+    list-style: none;
+}
+
+#Collections ul li {
+    float: left;
+    height: 420px;
+    width: 22%;
+    padding: 10px;
+    text-align: center;
+}
+
+#Collections ul li img {
+    padding: 12px 8px;
+    margin-left: -30px;
+    border: 1px solid rgb(207, 207, 207);
+}
+
+#Collections ul li figcaption {
+    margin-top: 10px;
+}
+
+#Collections ul li figcaption:nth-child(1) {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgb(158, 158, 158);
+}
+
+#Collections ul li span {
+    font-size: 14px;
+    color: rgb(158, 158, 158);
+}
+
+#Collections ul li span:nth-child(1) {
+    padding-top: 10px;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 30px;
+}
+
+#Collections::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+#detail {
+    height: 500px;
+    width: 100%;
+}
+
+#detail .detail {
+    display: inline-block;
+    float: left;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#detail .left {
+    width: 66.66%;
+    background: url(img/2.png) no-repeat;
+    background-size: 100% 100%;
+    color: rgb(255, 255, 255);
+}
+
+#detail .left h1 {
+    font-size: 130px;
+    margin-top: 80px;
+}
+
+
+}
+
+#detail .left h2 {
+    font-size: 40px;
+    margin-top: 110px;
+}
+
+#detail .left p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+#detail .right {
+    width: 33.33%;
+}
+
+#detail .right h2 {
+    margin-top: 140px;
+}
+
+#detail .right p {
+    padding: 0 70px;
+    line-height: 35px;
+    text-align: left;
+    font-size: 12px;
+    color: rgb(176, 176, 176);
+}
+
+#detail .right .button {
+    height: 30px;
+    width: 110px;
+    line-height: 30px;
+    margin-left: 170px;
+    color: rgb(231, 80, 77);
+    border: 1px solid rgb(231, 80, 77);
+}
+
+.right::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+#more {
+    width: 100%;
+    height: 520px;
+}
+
+.more {
+    height: 520px;
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+
+.more:nth-child(1) {
+    color: white;
+    background-color: rgb(231, 79, 77);
+}
+
+.more p {
+    margin-top: 200px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.more hr {
+    height: 2px;
+    width: 35px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    margin-top: 10px;
+}
+
+.more div {
+    margin-top: 20px;
+    height: 35px;
+    width: 166px;
+    line-height: 35px;
+    margin-left: 140px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#center p {
+    color: rgb(106, 106, 106);
+}
+
+#center hr {
+    background-color: rgb(168, 168, 168);
+}
+
+#center div {
+    border: 1px solid rgb(231, 79, 77);
+    color: rgb(231, 79, 77);
+}
+
+#more::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+#join {
+    margin-top: 90px;
+}
+
+.join-head h3 {
+    text-align: center;
+}
+
+.join-head hr {
+    height: 2px;
+    width: 35px;
+    background-color: rgb(168, 168, 168);
+    border: none;
+    margin-top: 10px;
+}
+
+.join-head p {
+    height: 50px;
+    text-align: center;
+    color: rgb(176, 176, 176);
+    font-size: 12px;
+}
+
+#condition {
+    height: 500px;
+    width: 400px;
+    float: left;
+    margin-top: 20px;
+}
+
+.condition {
+    height: 90px;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.condition h4 {
+    font-size: 16px;
+    color: rgb(106, 106, 106);
+}
+
+.condition p {
+    font-size: 12px;
+    color: rgb(176, 176, 176);
+}
+
+.condition span {
+    display: block;
+    margin-left: 240px;
+    font-size: 12px;
+    color: rgb(150, 142, 138);
+}
+
+.condition span:before {
+    content: "more";
+    height: 20px;
+    text-indent: 25px;
+    display: block;
+    background: url(img/19.png) no-repeat left;
+}
+
+.form {
+    float: left;
+    width: 700px;
+    height: 500px;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+.form input {
+    height: 40px;
+    width: 300px;
+    text-indent: 20px;
+    margin-left: 20px;
+    background: rgb(237, 237, 238);
+    border: none;
+}
+
+.form textarea {
+    height: 120px;
+    width: 580px;
+    /*text-indent: 10px;*/
+    background-color: rgb(237, 237, 238);
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 20px;
+    border: none;
+}
+
+.form .botton {
+    height: 40px;
+    width: 620px;
+    background-color: rgb(237, 237, 238);
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 20px;
+    line-height: 40px;
+}
+
+#join::after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.footer {
+    height: 400px;
+    width: 100%;
+    background: rgb(51, 54, 63);
+}
+
+#footerTitle {
+    height: 80px;
+    width: 100%;
+    padding-top: 60px;
+    color: rgb(255, 255, 255);
+}
+
+#footerTitle h2 {
+    text-align: center;
+}
+
+#footerTitle p {
+    font-size: 12px;
+    line-height: 24px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    text-align: center;
+    width: 443px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+#Email {
+    height: 35px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+#Email input {
+    height: 35px;
+    width: 340px;
+    border: none;
+    padding-left: 15px;
+}
+
+#Email button {
+    height: 37px;
+    width: 90px;
+    margin-left: -8px;
+    background: rgb(110, 113, 118);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.contact {
+    margin: 40px 445px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact ul, li {
+    list-style: none;
+}
+
+.contact ul li {
+    height: 40px;
+    width: 60px;
+    float: left;
+}
+
+#foot-back {
+    height: 60px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgb(47, 47, 55);
+    font-size: 10px;
+}
+
+#foot-back a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    float: right;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+
+#foot-back span {
+    float: left;
+    margin-left: 120px;
+    margin-top: 30px;
+}
